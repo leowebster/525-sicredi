@@ -1,0 +1,6 @@
+---
+# tasks file for test
+
+- name: chamando um arquivo
+  include: test.yaml
+

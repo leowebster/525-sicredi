@@ -1,0 +1,13 @@
+---
+
+- name: instalar pacotes
+  hosts: automation
+  tasks:
+   - name: instalando epel-release
+     package:
+      name: epel-release
+      
+   - name: instalando vim
+     package:
+      name: vim
+

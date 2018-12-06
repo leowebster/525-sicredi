@@ -1,0 +1,11 @@
+---
+# tasks file for puppet
+- name: instalar os repositorios do puppet
+  include: repo.yaml
+
+- name: instalando puppet server na devops
+  include: server.yaml
+
+- name: instalando puppet_agent server em todas as vms
+  include: agent.yaml
+

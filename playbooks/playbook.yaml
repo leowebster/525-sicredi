@@ -1,0 +1,4 @@
+- name: teste de uma playbook que chama a role
+  hosts: all
+  roles:
+   - test

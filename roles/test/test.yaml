@@ -1,0 +1,8 @@
+- name: testando um modulo aleatorio
+  package:
+   name: "{{item}}"
+  with items:
+   - htop
+   - vim
+   - cosway
+   - figlet

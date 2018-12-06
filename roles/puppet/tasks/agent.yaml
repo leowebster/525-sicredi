@@ -1,0 +1,4 @@
+- name: instalando puppet-agent nas maquinas do parque
+  package:
+    name: puppet-agent
+    update_cache: yes

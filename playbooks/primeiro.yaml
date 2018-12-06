@@ -1,0 +1,21 @@
+---
+
+- name: minha primeira playbook
+  hosts: devops docker
+  tasks:
+   - name: criando usuario
+     user:
+      name: devops
+      state: present
+      password: '$1$5P699Rhw$2v0e4d93EWaWMvwae8y8q0'
+
+   - name: instalando pacote na playbook 
+     package: 
+      name: vim 
+
+   - name: copiando um arquivo
+     copy:
+      src: config.php
+      dest: /tmp/
+
+
